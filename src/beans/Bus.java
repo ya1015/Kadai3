@@ -2,7 +2,7 @@ package beans;
 /**
  * バスを表すクラス
  */
-public class Bus {
+public class Bus extends Car{
 	/** スピードを表す文字列 */
 	private String speed   = "＊＊";
 

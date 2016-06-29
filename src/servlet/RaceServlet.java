@@ -46,9 +46,9 @@ public class RaceServlet extends HttpServlet {
 		// 文字コード設定
 		request.setCharacterEncoding("utf-8");
 
-		if (request.getParameter("flg") == null) {
-			System.out.println("fjdfhfdhf;a");
-		} else if(request.getParameter("flg") == null){
+		if (request.getParameter("flg") == null || request.getParameter("flg").equals("true")) {
+
+		} else{
 			// counterが5になったときに1回休み、2分の1の確率で復活
 			if (counter % 5 != 0) {
 				ElectricCar ec = new ElectricCar();
