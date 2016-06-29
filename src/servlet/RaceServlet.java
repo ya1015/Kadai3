@@ -38,7 +38,7 @@ public class RaceServlet extends HttpServlet {
 	}
 
 	/**
-	 * S * @see HttpServlet#doGet(HttpServletRequest request,
+	 * @see HttpServlet#doGet(HttpServletRequest request,
 	 * HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
