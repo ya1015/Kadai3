@@ -2,17 +2,21 @@ package beans;
 /**
  * 電気自動車クラス
  */
-public class ElectricCar {
+public class ElectricCar extends AbstractCar{
 	/** スピードを表す文字列 */
 	private String speed   = "－－－";
-	/** 確率 */
-	private int probability;
+	/** 例外スピードを表す文字列 */
+	private String ex_speed = "";
 
-	/**
-	 * スピードを返す
-	 * @return speed
-	 */
-	public String getSpeed() {
-		return speed;
+	@Override
+	String run() {
+		return this.speed;
 	}
+
+	@Override
+	String exRun() {
+		return this.ex_speed;
+	}
+
+
 }

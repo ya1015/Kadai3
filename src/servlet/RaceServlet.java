@@ -8,9 +8,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import beans.Bus;
-import beans.ElectricCar;
-import beans.SuperCar;
+import beans.Race;
 
 /**
  * Servlet implementation class RaceServlet
@@ -30,6 +28,9 @@ public class RaceServlet extends HttpServlet {
 	/** 休憩を表すフラグ */
 	private boolean eRest_flag = false;
 
+
+	Race r = new Race();
+
 	/**
 	 * @see HttpServlet#HttpServlet()
 	 */
@@ -46,6 +47,10 @@ public class RaceServlet extends HttpServlet {
 		// 文字コード設定
 		request.setCharacterEncoding("utf-8");
 
+
+
+
+		/*
 		if (request.getParameter("flg") == null || request.getParameter("flg").equals("true")) {
 
 		} else{
@@ -89,6 +94,7 @@ public class RaceServlet extends HttpServlet {
 
 			request.getRequestDispatcher("output.jsp").forward(request, response);
 		}
+		*/
 
 	}
 
