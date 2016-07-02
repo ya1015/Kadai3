@@ -29,6 +29,7 @@ public class Race {
 		btext += b.run();
 		stext += s.run();
 
+		/*
 		//走る(例外)
 		etext += e.exRun();
 		btext += b.exRun();
@@ -38,6 +39,9 @@ public class Race {
 		e.stop();
 		b.stop();
 		s.stop();
+		*/
+
+		counter++;
 	}
 
 

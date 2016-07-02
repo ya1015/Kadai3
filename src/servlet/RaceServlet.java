@@ -17,18 +17,6 @@ import beans.Race;
 public class RaceServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-	/** 電気自動車の走行を表す文字列 */
-	private String etext = "";
-	/** バスの走行を表す文字列 */
-	private String btext = "";
-	/** スーパーカーの走行を表す文字列 */
-	private String stext = "";
-	/** F5を押された回数を数えるカウンター */
-	private int counter;
-	/** 休憩を表すフラグ */
-	private boolean eRest_flag = false;
-
-
 	Race r = new Race();
 
 	/**
@@ -39,14 +27,13 @@ public class RaceServlet extends HttpServlet {
 	}
 
 	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request,
+	 * @see HttpServlet#doGet(HttpSservletRequest request,
 	 * HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		// 文字コード設定
 		request.setCharacterEncoding("utf-8");
-
 
 
 
