@@ -35,6 +35,9 @@ public class RaceServlet extends HttpServlet {
 		// 文字コード設定
 		request.setCharacterEncoding("utf-8");
 
+		String[] race = r.returnRace();
+
+		request.setAttribute("race", race);
 
 
 		/*

@@ -15,10 +15,12 @@ public class Race {
 	/** 休憩を表すフラグ */
 	private boolean eRest_flag = false;
 
+	private String[] race;
+
 	/**
-	 * コンストラクタ
+	 * レースの結果を返す
 	 */
-	public Race(){
+	public String[] returnRace(){
 		//インスタンス生成
 		AbstractCar e = new ElectricCar();
 		AbstractCar b = new Bus();
@@ -41,8 +43,12 @@ public class Race {
 		s.stop();
 		*/
 
+		race[0] = etext;
+		race[1] = btext;
+		race[2] = stext;
+
 		counter++;
+
+		return race;
 	}
-
-
 }
