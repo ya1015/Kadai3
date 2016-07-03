@@ -1,6 +1,7 @@
 package servlet;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -35,7 +36,8 @@ public class RaceServlet extends HttpServlet {
 		// 文字コード設定
 		request.setCharacterEncoding("utf-8");
 
-		String[] race = r.returnRace();
+		ArrayList<String> race = new ArrayList<String>();
+		race = r.returnRace();
 
 		request.setAttribute("race", race);
 
@@ -81,10 +83,10 @@ public class RaceServlet extends HttpServlet {
 
 			// カウントアップ
 			counter++;
-
+*/
 			request.getRequestDispatcher("output.jsp").forward(request, response);
-		}
-		*/
+
+
 
 	}
 
